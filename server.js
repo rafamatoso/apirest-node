@@ -22,4 +22,4 @@ requireDir('./src/models');
 // Rotas - Recebe uma requisição a partir da rota básica esepcificada no primeiro parâmetro
 app.use('/api', require('./src/routes'));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3001);
